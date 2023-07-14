@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>       
+       <include file="$(find catkin_ic)/launch/corredor_geom.launch"/>
+       <include file="$(find husky_gazebo)/launch/spawn_husky.launch"/>
+</launch>

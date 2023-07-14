@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+  <world name="departamento">
+    <scene>
+      <ambient>0.0 0.0 0.0 1.0</ambient>
+      <shadows>0</shadows>
+    </scene>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <model name='Corredor'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>/home/luisa/ros/src/catkin_ic/models/corredor/meshes/dpto_eletrica.dae</uri>
+            </mesh>
+          </geometry>
+   
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>/home/luisa/ros/src/catkin_ic/models/corredor/meshes/dpto_eletrica.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+
+      </link>
+ 
+    </model>
+    
+    
+    
+  </world>
+</sdf>

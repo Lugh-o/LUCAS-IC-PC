@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d ~/ros/src/catkin_ic/scripts/rviz_config1.rviz" output="screen"/>
+</launch>

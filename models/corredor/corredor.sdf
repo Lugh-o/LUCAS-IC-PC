@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+    <model name="corredor">
+      <pose>0 0 0  0 0 0</pose>
+      <static>true</static>
+      <link name="corredor_body">
+        <collision name="corredor_collision">
+          <geometry>
+            <mesh filename="ros/src/catkin_ic/models/corredor/meshes/dpto_eletrica.dae"/>
+          </geometry>
+        </collision>
+        <visual name="corredor_visual">
+          <geometry>
+            <mesh filename="ros/src/catkin_ic/models/corredor/meshes/dpto_eletrica.dae"/>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+</sdf>    

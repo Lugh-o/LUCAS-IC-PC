@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+
+  
+  <arg name="verbose" value="true" />
+  <arg name="HUSKY_LMS1XX_ENABLED" value="true"/>
+  <arg name="HUSKY_LMS1XX_TOPIC" value="/front/scan"/>
+  
+  <include file="ros/src/catkin_ic/launch/departamento.launch" />
+  <include file="ros/src/catkin_ic/launch/spawn_husky.launch"  />
+  
+
+</launch>
