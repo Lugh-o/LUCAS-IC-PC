@@ -37,7 +37,8 @@ namespace gazebo {
 			//Criação das funções utilizadas para obtenção da posição do robô, para a publicação da posição pós sequestro, e timer do callback
 			this->Setclient = this->rosNode->serviceClient<gazebo_msgs::SetModelState>("/gazebo/set_model_state");
 			this->Getclient = this->rosNode->serviceClient<gazebo_msgs::GetModelState>("/gazebo/get_model_state");
-			this->timer = this->rosNode->createTimer(ros::Duration(1.0), &WorldPluginTutorial::timerCallback, this);
+			this->timer = this->rosNode->createTimer(ros::Duration(30.0), &WorldPluginTutorial::timerCallback, this);
+			this->timer.stop();
 			//Existem outras formas mais simples de se fazer isso, mas se não for dessa forma uma vez que a função load acabar essas 3 funções deixam de existir e param de ser executadas, isso é sensível especialmente para o timer utilizado.
 			
 		}
@@ -59,9 +60,9 @@ namespace gazebo {
 			//Cálculo dos Parâmetros do sequestro
 			//Esses valores podem ser alterados diretamente, ou podem ser criadas variáveis para que a manipulação desses parâmetros sejam mais simples
 			//Ex: x_prime = current_x + seq_x; 
-			x_prime = current_x + 1.0;
+			x_prime = current_x + 0.5;
 			y_prime = current_y + 0.5;
-			theta_prime = current_theta + 1.57079633;		
+			theta_prime = current_theta + 1;		
 					
 			//Armazenamento dos parâmetros do sequestro no objeto newPose 
 			newPose.position.x = x_prime;
