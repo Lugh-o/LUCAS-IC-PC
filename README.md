@@ -4,7 +4,7 @@ Licença: Universidade Federal da Bahia(UFBA);
 Data da última versão do projeto: junho.
 
 # Resumo do projeto
-	Projeto finalizado. Ele consiste no desenvolvimento de ferramentas computacionais para navegação e localização robótica, focado principalmente no Perfect Matche no AMCL. Nele foram feitos ambientes de simulação utilizando o Husky para testar algumas hipóteses e tentar replicar resultados de outros estudos.
+Projeto finalizado. Ele consiste no desenvolvimento de ferramentas computacionais para navegação e localização robótica, focado principalmente no Perfect Matche no AMCL. Nele foram feitos ambientes de simulação utilizando o Husky para testar algumas hipóteses e tentar replicar resultados de outros estudos.
 
 ## 🔨 Conteúdo do projeto
 
